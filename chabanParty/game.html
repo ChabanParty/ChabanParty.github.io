@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <title>My game</title>
+  </head>
+
+  <body>
+    <div class="screen-game wow fadeIn" data-wow-duration="0.2s">
+      <img src="img/right.png" alt="" class="screen-game__right wow rotateInDownRight" data-wow-delay=".8s"></img>
+      <img src="img/left.png" alt="" class="screen-game__left wow rotateInDownLeft" data-wow-delay=".8s"></img>
+      <div class="container container-game">
+        <h1 class="game-title wow fadeInDown " data-wow-delay=".5s">Хто ты?</h1>
+
+        <div class="game-window wow rotateIn ">
+          <main>
+            <div class="folse">
+              <div class="answer-window__left wow fadeInLeft" data-wow-duration="1.2s">
+                <div class="answer-text"></div>
+                <div class="answer-btn"></div>
+              </div>  
+
+              <div class="answer-window__image wow fadeInRight"  data-wow-duration="1.2s">
+                <a href=""  target="_blank" class="answer-link "></a>
+              </div>
+            </div>
+            <div class="question"></div>
+            <ul class="answer"></ul>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/quiz_data.js"></script>
+    <script src="js/quiz_answer.js"></script>
+    <script src="js/quiz_code.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
